@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GerHub</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#08050f;color:#fff;font-family:Arial,sans-serif}
+nav{height:72px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #29183d;background:#0b0611}
+.logo{font-size:26px;font-weight:800;color:#b765ff}.login{background:#8b3dff;color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+main{max-width:1100px;margin:auto;padding:70px 6%}.hero{text-align:center;margin-bottom:60px}.hero h1{font-size:58px;margin:10px 0}.hero span{color:#a957ff}.hero p{color:#aaa0b4}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#120b1c;border:1px solid #342047;border-radius:16px;overflow:hidden}.pic{height:170px;background:radial-gradient(circle,#6924a6,#160a23 65%);display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;color:#e5c9ff}.pic img{width:100%;height:100%;object-fit:cover;display:block}.body{padding:20px}.price{font-size:22px;font-weight:800}.buy{display:block;text-align:center;margin-top:18px;padding:12px;border-radius:10px;background:#8b3dff;color:white;text-decoration:none;font-weight:700}
+.note{margin-top:45px;padding:20px;border:1px solid #342047;border-radius:14px;color:#b8adbf}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.hero h1{font-size:42px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">GerHub</div><a class="login" href="/auth/discord">Mit Discord anmelden</a></nav>
+<main>
+<section class="hero"><div>GERHUB STORE</div><h1>Dein <span>GerHub</span> Shop</h1><p>Melde dich mit Discord an, kaufe dein Paket und erhalte anschließend deinen passenden Access.</p></section>
+<section class="grid">
+<article class="card"><div class="pic"><img src="kleiner-ordner.png" alt="Kleiner Ordner"></div><div class="body"><h2>Kleiner Ordner</h2><p>Perfekt für den Einstieg.</p><div class="price">5,00 €</div><a class="buy" href="/buy/small">Kaufen</a></div></article>
+<article class="card"><div class="pic"><img src="mittlerer-ordner.png" alt="Mittlerer Ordner"></div><div class="body"><h2>Mittlerer Ordner</h2><p>Mehr Inhalt, mehr Möglichkeiten.</p><div class="price">10,00 €</div><a class="buy" href="/buy/medium">Kaufen</a></div></article>
+<article class="card"><div class="pic"><img src="grosser-ordner.png" alt="Großer Ordner"></div><div class="body"><h2>Großer Ordner</h2><p>Das komplette Paket.</p><div class="price">20,00 €</div><a class="buy" href="/buy/large">Kaufen</a></div></article>
+</section>
+<div class="note">🔒 Deine Discord-Anmeldedaten werden nicht an GerHub weitergegeben. Discord übernimmt die Anmeldung und GerHub erhält nur die freigegebenen OAuth2-Daten.</div>
+</main>
+</body>
+</html>
